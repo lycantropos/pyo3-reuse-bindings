@@ -13,6 +13,5 @@ impl MyClass {
 
 #[pymodule]
 fn base(_py: Python, module: &PyModule) -> PyResult<()> {
-    module.add_class::<MyClass>();
-    Ok(())
+    module.add_class::<MyClass>()
 }
