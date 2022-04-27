@@ -1,4 +1,4 @@
-### Preparation (optional)
+# Preparation (optional)
 
 Create virtual environment with `Python3.7+`
 ```bash
