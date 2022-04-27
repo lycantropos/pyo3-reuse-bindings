@@ -1,0 +1,16 @@
+[package]
+name = "base"
+description = "Base library."
+edition = "2018"
+version = "0.0.0"
+
+[lib]
+name = "base"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies.pyo3]
+version = "^0.16"
+features = ["extension-module"]
+
+[build-dependencies]
+pyo3-build-config = "^0.16"

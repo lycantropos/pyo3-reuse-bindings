@@ -1,0 +1,20 @@
+[package]
+name = "derived"
+description = "Derived library."
+license = "MIT License"
+version = "0.0.0"
+edition = "2018"
+
+[lib]
+name = "derived"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies.pyo3]
+version = "^0.16"
+features = ["extension-module"]
+
+[dependencies.base]
+path = "../base"
+
+[build-dependencies]
+pyo3-build-config = "^0.16"
